@@ -37,7 +37,6 @@ app.get('/:hash/:network', function(req, res){
     var network = req.params.network;
     var snetwork = social.factory(network);
     snetwork.search(hashtag, function(ret) {
-        console.log(ret);
         res.render('social/' + network, {
             title: network,
             content: ret,
