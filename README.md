@@ -17,7 +17,7 @@ Faça um clone do repositório
 
 Execute o servidor de desenvolvimento do node 
 
-   node app.js 
+    node app.js 
 
 ### Dependências
     npm install express
