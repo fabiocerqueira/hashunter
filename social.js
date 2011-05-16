@@ -11,7 +11,8 @@ social.factory = function(snetwork) {
     // check if snetwork in social.INSTALLEDS
     if (social.INSTALLEDS.indexOf(snetwork) == -1)
         throw snetwork + ' Does not exists!';
-    return eval('social.' + snetwork)();
+    var network = eval('social.' + snetwork);
+    return new network();
 };
 
 for (var i in social.INSTALLEDS) {
