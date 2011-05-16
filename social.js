@@ -5,6 +5,7 @@ social = exports;
 social.INSTALLEDS = [
     'twitter',
     'flickr',
+    'delicious',
 ];
 
 social.factory = function(snetwork) {
